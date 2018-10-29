@@ -6,7 +6,7 @@ class TESTCASE():
         
 
     def solve(self):
-
+        return 1
 
 def data_preprocessing(input_file):
     testcases=['index_start_from_1']
@@ -14,7 +14,7 @@ def data_preprocessing(input_file):
         num_of_testcase=int(f.readline())
         for n_th_testcase in range(1,num_of_testcase+1):
             #----------------------Parsing Logic----------------------#
-            for char in f.readline().rstrip('\n').split(" "))
+            numerator, denominator = f.readline().rstrip('\n').split("/")
             testcases.append(TESTCASE())
             #--------------------------End----------------------------#
     return testcases
