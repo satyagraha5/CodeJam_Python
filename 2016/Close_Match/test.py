@@ -1,4 +1,6 @@
 from collections import defaultdict
+from copy import deepcopy
+
 def test_defaultdict():
     test_dict = defaultdict(list)
     print(test_dict[0])
@@ -56,5 +58,31 @@ def test_pretty_print_dict():
         print(current_decision)
         #print(current_decision.decode('utf-8'))
 
+def test_int_str():
+    a = "123"
+    b = list(a)
+    print(b)
+    c = str(b)
+    print(c)
+
+def test_string_int():
+    a = '1'
+    b = str(int(a) + 1)
+    print(b)
+
+def test_call_by(list_a):
+    answer_list = deepcopy(list_a)
+    answer_list[0] = 2
+    return answer_list
+
+def test_dict():
+    a = dict()
+    a[0] = 1
+    print(a)
+
+def test_empty_list():
+    a = []
+    print(a == [])
+
 if __name__ == "__main__":
-    test_pretty_print_dict()
+    test_empty_list()
